@@ -1,28 +1,20 @@
 
-import './App.css'
-const etudient={
-  np:"Nasr Salah",
-  email:"slhnasr7@gmail.com",
-  tel:"telephone",
-  fil:"Science Informatique",
-  anne:"2026/2027",
-  groupe:"GLSI_C",
-  ville:"tunisie"
-}
+import './st.css'
 
 
-function SudentCart() {
+
+function SudentCart(props) {
     return  (
     <div id='bloc1' >
-      <img src="/m.jpg" alt="photo" />
+     <img src={props.image} alt="" />
       <h1 >Ficher Etudient</h1>
-      <p>Nom & Prenom {etudient.np}</p>
-      <p>MAIL {etudient.email}</p>
-      <p>TELEPHONE {etudient.tel}</p>
-      <p>FILIERE {etudient.fil}</p>
-      <p>ANNEE D'ETUDIER {etudient.anne}</p>
-      <p>GROUPE {etudient.groupe}</p>
-      <p>VILLE {etudient.ville}</p>
+      <p>Nom & Prenom: {props.np}</p>
+      <p>MAIL  {props.email}</p>
+      <p>TELEPHONE {props.tel}</p>
+      <p>FILIERE {props.fil}</p>
+      <p>ANNEE D'ETUDIER {props.anner}</p>
+      <p>GROUPE {props.groupe}</p>
+      <p>VILLE {props.ville}</p>
    
       <button  >CONTACTER</button>
       

@@ -1,14 +1,4 @@
-.boloc1 {
 
-  border-radius: 15px;
- 
-  background-color: white;
-
-  width: 350px;
-  border-top: 5px solid #6366f1;
-  text-align: center;
-  box-shadow: 0 10px 10px rgba(0 0 0 / 0.2);
-}
 body{
   margin: 0;
   min-height: 100vh;
@@ -19,20 +9,7 @@ body{
   background :linear-gradient(135deg,#dbeafe,#c4b5fd) ;
   font-family: Arial, Helvetica, sans-serif;
 }
-img{
-  height: 200px;
-  width: 200px;
-  border-radius: 50px;
-}
 
-h1{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: darkslategray;
-  text-shadow: 2px 2px 0px blue;
-  text-decoration: dotted;
-
-
-}
 p{
   letter-spacing: 2px;
   font-style: italic;
@@ -40,33 +17,8 @@ p{
   
 }
 
-#boloc1{
-  
-  height: 700px;
-  width: 800px;
-  background-color: dimgrey;
-  border: 2px red solid;
-  padding: 5px;
 
-}
-button{
-  background-color: blue;
-  border: 2px solid yellowgreen;
-  border-radius: 10px ;
-  width: 100px;
-  height: 50px;
-}
-button:hover{
-  background-color: azure;
-  width: 150px;
-  height: 100px;
-  border-radius: 40px;
-  font-family: 'Times New Roman', Times, serif;
-  font-style: italic;
-  border: 4px cornsilk;
-  color: black;
-  text-shadow: 2px 3px 5px yellowgreen;
-}
+
 .hd{
   width:  1100px;
   height: 100%;

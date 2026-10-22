@@ -7,7 +7,40 @@ import Header1 from './header1';
 import Navbar from './navbar';
 
 import Footer from './footer';
+import m from './assets/m.jpg'
 
+const etudient=[
+  {
+  np:"Nasr Salah",
+  email:"slhnasr7@gmail.com",
+  tel:"telephone",
+  fil:"Science Informatique",
+  anne:"2026/2027",
+  groupe:"GLSI_C",
+  ville:"tunisie",
+  image: m
+},
+{
+  np:"salhi omar",
+  email:"slhnasr88@gmail.com",
+  tel:"telephone",
+  fil:"Science Informatique",
+  anne:"2026/2027",
+  groupe:"GLSI_C",
+  ville:"tunisie",
+  image: m
+},
+{
+  np:"Nasr ",
+  email:"slhnasr7777@gmail.com",
+  tel:"telephone",
+  fil:"Science Informatique",
+  anne:"2026/2027",
+  groupe:"GLSI_C",
+  ville:"tunisie",
+  image: m
+}
+]
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,7 +51,22 @@ function App() {
       </div>
       <div className="esb">
         <Navbar></Navbar>  
-        <SudentCart></SudentCart>  
+        {
+          etudient.map((e)=>( 
+          <SudentCart
+        image={e.image}
+          np ={e.np}
+          email ={e.email}
+          tel ={e.tel}
+          fil ={e.fil}
+          anner={e.anne}
+          groupe ={e.groupe}
+          ville ={e.ville}
+          key={e.email}
+          />))
+        }
+          
+        
           
        </div>
        <div className="ft">
