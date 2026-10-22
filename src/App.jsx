@@ -51,9 +51,10 @@ function App() {
       </div>
       <div className="esb">
         <Navbar></Navbar>  
-        {
+        <div className="sc">
+          {
           etudient.map((e)=>( 
-          <SudentCart
+          <SudentCart 
         image={e.image}
           np ={e.np}
           email ={e.email}
@@ -65,6 +66,7 @@ function App() {
           key={e.email}
           />))
         }
+        </div>
           
         
           

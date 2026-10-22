@@ -34,6 +34,9 @@ p{
   gap: 20px;
   padding: 10px;
   align-items: start;
+}.sc{
+  width: auto;
+  height: auto;
 }
 
 
