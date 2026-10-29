@@ -5,11 +5,28 @@ import viteLogo from './assets/vite.svg'
 import SudentCart from './SudentCart';
 import Header1 from './header1';
 import Navbar from './navbar';
+//import SetEtudient from './SetEtudient';
 
 import Footer from './footer';
 import m from './assets/m.jpg'
 
-const etudient=[
+function App() {
+  function ajout_etuhdient(){
+    const nvEtudient={
+        np:"Nasr Salah",
+        email:"slhnasr7777@gmail.com",
+        tel:"telephone",
+        fil:"Science Informatique",
+        anne:"2026/2027",
+        groupe:"GLSI_C",
+        ville:"tunisie",
+        image: m
+
+    };
+    setetudient([...etudient, nvEtudient])
+}
+  const [etudient, setetudient] = useState(
+    [
   {
   np:"Nasr Salah",
   email:"slhnasr7@gmail.com",
@@ -20,37 +37,22 @@ const etudient=[
   ville:"tunisie",
   image: m
 },
-{
-  np:"salhi omar",
-  email:"slhnasr88@gmail.com",
-  tel:"telephone",
-  fil:"Science Informatique",
-  anne:"2026/2027",
-  groupe:"GLSI_C",
-  ville:"tunisie",
-  image: m
-},
-{
-  np:"Nasr ",
-  email:"slhnasr7777@gmail.com",
-  tel:"telephone",
-  fil:"Science Informatique",
-  anne:"2026/2027",
-  groupe:"GLSI_C",
-  ville:"tunisie",
-  image: m
-}
 ]
-function App() {
-  const [count, setCount] = useState(0)
+  )
 
   return (
     <>
+    
     <div className="hd">
+      
       <Header1></Header1>  
+      <button type="button" onClick={ajout_etuhdient}>Ajouter</button>
       </div>
       <div className="esb">
-        <Navbar></Navbar>  
+        <div className="nv">
+          <Navbar>
+            </Navbar>  
+        </div>
         <div className="sc">
           {
           etudient.map((e)=>( 
